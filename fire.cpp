@@ -26,9 +26,9 @@ bool string_starts_with(const std::string& str, const std::string& prefix) {
  * 打印帮助信息（直接运行时显示）
  */
 void print_help() {
-    std::cout << "niko 文件树生成工具  版本1.0.1" << std::endl;
+    std::cout << "fire 文件树生成工具  版本1.0.1" << std::endl;
     std::cout << "==========================" << std::endl;
-    std::cout << "用法: niko [选项] [目标路径]" << std::endl;
+    std::cout << "用法: fire [选项] [目标路径]" << std::endl;
     std::cout << std::endl;
     std::cout << "选项:" << std::endl;
     std::cout << "  -h/--help       显示此帮助信息（默认直接运行也显示）" << std::endl;
@@ -36,11 +36,11 @@ void print_help() {
     std::cout << "  -l <文件夹名>   跳过指定文件夹（可多个，自动触发-o）" << std::endl;
     std::cout << std::endl;
     std::cout << "示例:" << std::endl;
-    std::cout << "  ./niko -o                # 打印当前目录文件树" << std::endl;
-    std::cout << "  ./niko -o /home/user     # 打印指定目录文件树" << std::endl;
-    std::cout << "  ./niko -l .git           # 跳过.git并打印当前目录树（-l自动带-o）" << std::endl;
-    std::cout << "  ./niko -l .git -l build  # 跳过多个文件夹并打印树" << std::endl;
-    std::cout << "  ./niko -l .git -o /tmp   # 显式-o + 指定路径 + 跳过文件夹" << std::endl;
+    std::cout << "  ./fire -o                # 打印当前目录文件树" << std::endl;
+    std::cout << "  ./fire -o /home/user     # 打印指定目录文件树" << std::endl;
+    std::cout << "  ./fire -l .git           # 跳过.git并打印当前目录树（-l自动带-o）" << std::endl;
+    std::cout << "  ./fire -l .git -l build  # 跳过多个文件夹并打印树" << std::endl;
+    std::cout << "  ./fire -l .git -o /tmp   # 显式-o + 指定路径 + 跳过文件夹" << std::endl;
 }
 
 /**

@@ -1,4 +1,4 @@
-## Niko
+## Fire
 
 让豆包写的一个小工具，以下内容为豆包编写
 
@@ -27,25 +27,25 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/BS112-GIF/Niko.git
-cd Niko
+git clone https://github.com/BS112-GIF/Fire.git
+cd Fire
 
 # 编译（src 目录下存放 filetree.cpp）
-g++ -std=c++17 src/filetree.cpp -o niko
+g++ -std=c++17 src/filetree.cpp -o fire
 
 # macOS 若提示 filesystem 库缺失，执行：
-clang++ -std=c++17 src/filetree.cpp -o niko -lc++fs
+clang++ -std=c++17 src/filetree.cpp -o fire -lc++fs
 ```
 
 #### Windows（MinGW）
 
 ```powershell
 # 克隆仓库
-git clone https://github.com/BS112-GIF/Niko.git
-cd Niko
+git clone https://github.com/BS112-GIF/Fire.git
+cd Fire
 
 # 编译
-g++ -std=c++17 src/filetree.cpp -o niko.exe -lstdc++fs
+g++ -std=c++17 src/filetree.cpp -o fire.exe -lstdc++fs
 ```
 
 ## 🚀 使用方法
@@ -54,10 +54,10 @@ g++ -std=c++17 src/filetree.cpp -o niko.exe -lstdc++fs
 
 ```bash
 # Linux/macOS
-./niko [选项] [目标路径]
+./fire [选项] [目标路径]
 
 # Windows
-.\niko.exe [选项] [目标路径]
+.\fire.exe [选项] [目标路径]
 ```
 
 ### 核心选项
@@ -74,50 +74,50 @@ g++ -std=c++17 src/filetree.cpp -o niko.exe -lstdc++fs
 
 ```bash
 # Linux/macOS
-./niko
+./fire
 
 # Windows
-.\niko.exe
+.\fire.exe
 ```
 
 #### 2\. 打印当前目录文件树
 
 ```bash
 # Linux/macOS
-./niko -o
+./fire -o
 
 # Windows
-.\niko.exe -o
+.\fire.exe -o
 ```
 
 #### 3\. 打印指定目录文件树
 
 ```bash
 # Linux/macOS
-./niko -o /home/用户/项目
+./fire -o /home/用户/项目
 
 # Windows
-.\niko.exe -o C:\Users\你的用户名\文档
+.\fire.exe -o C:\Users\你的用户名\文档
 ```
 
 #### 4\. 跳过单个文件夹（如 .git）
 
 ```bash
 # Linux/macOS
-./niko -l .git
+./fire -l .git
 
 # Windows
-.\niko.exe -l .git
+.\fire.exe -l .git
 ```
 
 #### 5\. 跳过多个文件夹（如 .git + build）
 
 ```bash
 # Linux/macOS
-./niko -l .git -l build
+./fire -l .git -l build
 
 # Windows
-.\niko.exe -l .git -l build
+.\fire.exe -l .git -l build
 ```
 
 ## 📸 输出示例
